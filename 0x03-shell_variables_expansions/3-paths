@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | tr -dc ":" | wc -c
+echo "$PATH" | tr -dc ':' | wc -c | awk '{print $1+1}'
